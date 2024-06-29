@@ -6,7 +6,8 @@ self.addEventListener('install', event => {
                 '/index.html',
                 '/styles.css',
                 '/script.js',
-                '/icon.png'
+                '/icon.png',
+                'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
             ]);
         })
     );
