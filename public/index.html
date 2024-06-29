@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Despesas de Viagem</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="container mt-5">
+    <h1 class="text-center">Gestor de Despesas de Viagem</h1>
+    <form id="expense-form" class="mb-3">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" id="description" placeholder="Descrição da Despesa" required>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" id="quantity" placeholder="Quantidade" required>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" id="value" placeholder="Valor" step="0.01" required>
+            </div>
+            <div class="col">
+                <select class="form-control" id="currency-origin" required>
+                    <option value="">Moeda de Origem</option>
+                    <option value="BRL">BRL</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div class="col">
+                <select class="form-control" id="currency-destination" required>
+                    <option value="">Moeda de Destino</option>
+                    <option value="BRL">BRL</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Adicionar</button>
+    </form>
+    <h2>Despesas</h2>
+    <ul id="expense-list" class="list-group mb-3"></ul>
+    <h3>Total em Moeda de Origem: <span id="total-origin">0</span></h3>
+    <h3>Total em Moeda de Destino: <span id="total-destination">0</span></h3>
+    <script src="js/script.js"></script>
+</body>
+</html>
