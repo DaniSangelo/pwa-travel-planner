@@ -1,14 +1,20 @@
 {
-    "name": "Gestor de Despesas de Viagem",
+    "name": "Travel Planner",
     "short_name": "Despesas Viagem",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
+    "description": "Gestor de Despesas de Viagem",
     "icons": [
         {
-            "src": "image/android-chrome-96x96.png",
-            "sizes": "96x96",
+            "src": "/image/despesas100bg.png",
+            "sizes": "100x100",
+            "type": "image/png"
+        },
+        {
+            "src": "/image/despesas500.png",
+            "sizes": "500x500",
             "type": "image/png"
         }
     ]

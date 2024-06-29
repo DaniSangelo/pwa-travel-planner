@@ -13,38 +13,39 @@
     <h1 class="text-center">Gestor de Despesas de Viagem</h1>
     <form id="expense-form" class="mb-3">
         <div class="form-row">
-            <div class="col">
-                <input type="text" class="form-control" id="description" placeholder="Descrição da Despesa" required>
+            <div class="col-md">
+                <input type="text" class="form-control mb-2" id="description" placeholder="Descrição da Despesa" required>
             </div>
-            <div class="col">
-                <input type="number" class="form-control" id="quantity" placeholder="Quantidade" required>
+            <div class="col-md">
+                <input type="number" class="form-control mb-2" id="quantity" placeholder="Quantidade" required>
             </div>
-            <div class="col">
-                <input type="number" class="form-control" id="value" placeholder="Valor" step="0.01" required>
+            <div class="col-md">
+                <input type="number" class="form-control mb-2" id="value" placeholder="Valor" step="0.01" required>
             </div>
-            <div class="col">
-                <select class="form-control" id="currency-origin" required>
+            <div class="col-md">
+                <select class="form-control mb-2" id="currency-origin" required>
                     <option value="">Moeda de Origem</option>
-                    <option value="BRL">BRL</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
                 </select>
             </div>
-            <div class="col">
-                <select class="form-control" id="currency-destination" required>
+            <div class="col-md">
+                <select class="form-control mb-2" id="currency-destination" required>
                     <option value="">Moeda de Destino</option>
-                    <option value="BRL">BRL</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
                 </select>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary mt-3">Adicionar</button>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary mt-3">Adicionar</button>
+        </div>
     </form>
-    <h2>Despesas</h2>
     <ul id="expense-list" class="list-group mb-3"></ul>
-    <h3>Total em Moeda de Origem: <span id="total-origin">0</span></h3>
-    <h3>Total em Moeda de Destino: <span id="total-destination">0</span></h3>
+    <h6 class="text-center">Total em Moeda de Origem: <span id="total-origin">0</span></h6>
+    <h6 class="text-center">Total em Moeda de Destino: <span id="total-destination">0</span></h6>
     <script src="js/script.js"></script>
 </body>
 </html>
